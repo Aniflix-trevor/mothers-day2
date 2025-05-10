@@ -1,0 +1,65 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.hero {
+  background: pink;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.gift-ideas, .tribute-form {
+  padding: 2rem;
+}
+
+.gift-ideas ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gift-ideas li {
+  background: #ffe6e6;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.6rem;
+  background: #ff6f91;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tributes blockquote {
+  margin-top: 1rem;
+  border-left: 3px solid #ff6f91;
+  padding-left: 1rem;
+  color: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f8d7da;
+}
