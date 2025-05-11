@@ -81,26 +81,26 @@ function App() {
   const [timeRemaining, setTimeRemaining] = useState(0);
   const [showContent, setShowContent] = useState(false);
 
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      const now = new Date();
-      const midnight = new Date(now);
-      midnight.setHours(24, 0, 0, 0); // Set to midnight of the next day
+  // useEffect(() => {
+  //   const calculateTimeLeft = () => {
+  //     const now = new Date();
+  //     const midnight = new Date(now);
+  //     midnight.setHours(24, 0, 0, 0); // Set to midnight of the next day
 
-      const difference = midnight.getTime() - now.getTime();
-      let timeLeft = Math.round(difference / 1000); // Time left in seconds
+  //     const difference = midnight.getTime() - now.getTime();
+  //     let timeLeft = Math.round(difference / 1000); // Time left in seconds
 
-      return timeLeft > 0 ? timeLeft : 0;
-    };
+  //     return timeLeft > 0 ? timeLeft : 0;
+  //   };
 
-    setTimeRemaining(calculateTimeLeft());
+  //   setTimeRemaining(calculateTimeLeft());
 
-    const timer = setInterval(() => {
-      setTimeRemaining(calculateTimeLeft());
-    }, 1000);
+  //   const timer = setInterval(() => {
+  //     setTimeRemaining(calculateTimeLeft());
+  //   }, 1000);
 
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   useEffect(() => {
     if (timeRemaining <= 0) {
@@ -124,7 +124,7 @@ function App() {
           <h1>Happy Mother’s Day! 💐</h1>
           <div className="video-container">
             <video width="700" height="416" controls>
-              <source src="./public/music/mom-video.mp4" type="video/mp4" />
+              <source src="/music/mom-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
