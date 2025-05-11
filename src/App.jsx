@@ -123,7 +123,7 @@ function App() {
         <>
           <h1>Happy Mother’s Day! 💐</h1>
           <div className="video-container">
-            <video width="700" height="416" controls>
+            <video width="100%" height="auto" controls>
               <source src="/music/mom-video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
